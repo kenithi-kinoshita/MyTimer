@@ -72,6 +72,11 @@ struct ContentView: View {
                     }
                 }
             }
+            // 画面が表示されるときに実行される
+            .onAppear {
+                // カウントの変数を初期化
+                count = 0
+            }
             // ナビゲーションにボタンを追加
             .navigationBarItems(trailing:
                 // ナビゲーション遷移
